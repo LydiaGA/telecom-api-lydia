@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const {check, validationResults} = require('express-validator');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const UsersController = require("../controllers/users");
+const router = express.Router();
+
+router.get('/signup', [
+  check('name').not().isEmpty().withMessage('Name is Required'),
+  check('phone_number').not().isEmpty().withMessage('Phone Number is Required'),
+  check('password').not().isEmpty().withMessage('Password is Required'),
+], UsersController.signup);
 
 module.exports = router;
