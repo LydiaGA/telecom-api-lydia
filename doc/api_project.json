@@ -1,7 +1,7 @@
 {
   "name": "Telecom Api",
   "version": "1.0.0",
-  "description": "Telecom Api",
+  "description": "Telecom Api (Unfinished)",
   "template": {
     "forceLanguage": "en"
   },
@@ -10,7 +10,7 @@
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2019-11-04T11:32:31.096Z",
+    "time": "2019-11-04T11:58:53.021Z",
     "url": "http://apidocjs.com",
     "version": "0.17.7"
   }
