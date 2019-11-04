@@ -2,6 +2,7 @@ const express = require('express');
 const {check, validationResults} = require('express-validator');
 
 const UsersController = require("../controllers/users");
+const checkAuth = require('../lib/check_auth');
 const router = express.Router();
 
 router.post('/signup', [
@@ -15,10 +16,10 @@ router.post('/login', [
   check('password').not().isEmpty().withMessage('Password is Required'),
 ], UsersController.login);
 
-router.put('/:id', UsersController.updateUser);
+router.put('/:id', checkAuth, UsersController.updateUser);
 
-router.delete('/:id', UsersController.deleteUser);
+router.delete('/:id', checkAuth, UsersController.deleteUser);
 
-router.get('/search', UsersController.search);
+router.get('/search', checkAuth, UsersController.search);
 
 module.exports = router;
