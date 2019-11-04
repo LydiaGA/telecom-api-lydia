@@ -16,10 +16,10 @@ router.post('/login', [
   check('password').not().isEmpty().withMessage('Password is Required'),
 ], UsersController.login);
 
+router.get('/search', checkAuth, UsersController.search);
+
 router.put('/:id', checkAuth, UsersController.updateUser);
 
 router.delete('/:id', checkAuth, UsersController.deleteUser);
-
-router.get('/search', checkAuth, UsersController.search);
 
 module.exports = router;
