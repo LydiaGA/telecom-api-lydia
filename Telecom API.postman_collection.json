@@ -1,0 +1,1161 @@
+{
+	"info": {
+		"_postman_id": "3bf7cd5e-96aa-4bbb-b2e7-af1d4baced08",
+		"name": "Telecom API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"User 3\",\n\t\"phone_number\" : \"00003\",\n\t\"password\" : \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/users/signup",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"signup"
+					]
+				},
+				"description": "Create new User"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/users/signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"User 3\",\n\t\"phone_number\" : \"00003\",\n\t\"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/users/signup",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "240"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"f0-kioTfsY2TQtcEQxTbni4HDzsMIs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 10:19:06 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dbffb1a8ebefa001775a453\",\n    \"name\": \"User 3\",\n    \"phone_number\": \"00003\",\n    \"password\": \"$2b$10$TmdkHgAqUt0JhyOY5fwIfOhIYjGUiXYhXIkLgrUtIvGE6tQwCfNdK\",\n    \"date_created\": \"2019-11-04T10:19:06.613Z\",\n    \"date_modified\": \"2019-11-04T10:19:06.613Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number\" : \"00003\",\n\t\"password\" : \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/users/login",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				},
+				"description": "User Login"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/users/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone_number\" : \"00003\",\n\t\"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/users/login",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "461"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1cd-RNZbXzDwTYdLAr2+pEc/ymEJTKc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 10:20:15 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"_id\": \"5dbffb1a8ebefa001775a453\",\n        \"name\": \"User 3\",\n        \"phone_number\": \"00003\",\n        \"password\": \"$2b$10$TmdkHgAqUt0JhyOY5fwIfOhIYjGUiXYhXIkLgrUtIvGE6tQwCfNdK\",\n        \"date_created\": \"2019-11-04T10:19:06.613Z\",\n        \"date_modified\": \"2019-11-04T10:19:06.613Z\",\n        \"__v\": 0\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMyIsImlkIjoiNWRiZmZiMWE4ZWJlZmEwMDE3NzVhNDUzIiwiaWF0IjoxNTcyODYyODE1LCJleHAiOjE1NzI5NDkyMTV9.6zSCC5ZTbeMct6nE0IIJyxl7ozvf2q6WxuNZz3CRLEo\"\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/users/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMyIsImlkIjoiNWRiZmZiMWE4ZWJlZmEwMDE3NzVhNDUzIiwiaWF0IjoxNTcyODYyODYyLCJleHAiOjE1NzI5NDkyNjJ9.p1sQ_7FiWnYg1jsvJIz4nDJvTrZTrA2HpWTwiF1WdVg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"User 3 Edited\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/users/5dbffb1a8ebefa001775a453",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"5dbffb1a8ebefa001775a453"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/users/:id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMyIsImlkIjoiNWRiZmZiMWE4ZWJlZmEwMDE3NzVhNDUzIiwiaWF0IjoxNTcyODYyODYyLCJleHAiOjE1NzI5NDkyNjJ9.p1sQ_7FiWnYg1jsvJIz4nDJvTrZTrA2HpWTwiF1WdVg",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"User 3 Edited\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/users/5dbffb1a8ebefa001775a453",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"5dbffb1a8ebefa001775a453"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"f7-7xpW5dW1r7h30M56Nefa6KQOp60\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 10:22:16 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dbffb1a8ebefa001775a453\",\n    \"name\": \"User 1 Edited\",\n    \"phone_number\": \"00003\",\n    \"password\": \"$2b$10$TmdkHgAqUt0JhyOY5fwIfOhIYjGUiXYhXIkLgrUtIvGE6tQwCfNdK\",\n    \"date_created\": \"2019-11-04T10:19:06.613Z\",\n    \"date_modified\": \"2019-11-04T10:22:04.757Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/users/search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMyIsImlkIjoiNWRiZmZiMWE4ZWJlZmEwMDE3NzVhNDUzIiwiaWF0IjoxNTcyODYyOTM5LCJleHAiOjE1NzI5NDkzMzl9.Us1h7ALDsypf8aSyR_id_iBQiZowzbxBUEGlNiDH2uA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/users/search?filter={}&page=1&limit=10&sort=date_created",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "{}"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "date_created"
+						}
+					]
+				},
+				"description": "Search for a User"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/users/search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMyIsImlkIjoiNWRiZmZiMWE4ZWJlZmEwMDE3NzVhNDUzIiwiaWF0IjoxNTcyODYyOTM5LCJleHAiOjE1NzI5NDkzMzl9.Us1h7ALDsypf8aSyR_id_iBQiZowzbxBUEGlNiDH2uA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/users/search?filter={}&page=1&limit=10&sort=date_created",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{}"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "sort",
+									"value": "date_created"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"e6-SIEE+4m94xBhuI53Goa9AgsfJIs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 10:24:18 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5dbff75a17a0f60e402361b4\",\n        \"name\": \"User 1\",\n        \"phone_number\": \"00001\"\n    },\n    {\n        \"_id\": \"5dbffad98ebefa001775a452\",\n        \"name\": \"User 2\",\n        \"phone_number\": \"00002\"\n    },\n    {\n        \"_id\": \"5dbffb1a8ebefa001775a453\",\n        \"name\": \"User 3 Edited\",\n        \"phone_number\": \"00003\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/calls",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"receiver\" : \"5dbffb1a8ebefa001775a453\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/calls",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"calls"
+					]
+				},
+				"description": "<p>Create a call</p>\n\n<p>Inputs : receiver id</p>"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/calls",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/calls/search",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"calls",
+								"search"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "201"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"c9-ZpKegQmNa/rQWDzkdld8tVbbEJw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:10:05 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dc0070dae8f9700175a12e7\",\n    \"receiver\": \"5dbffb1a8ebefa001775a453\",\n    \"caller\": \"5dbff75a17a0f60e402361b4\",\n    \"date_created\": \"2019-11-04T11:10:05.696Z\",\n    \"date_modified\": \"2019-11-04T11:10:05.696Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/calls/search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/calls/search",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"calls",
+						"search"
+					]
+				},
+				"description": "Search for calls"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/calls/search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/calls/search",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"calls",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"db-yZqW495Nj+5Xlw511GyPUjcd7l0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:12:27 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5dc0048dde3c343cc4c68304\",\n        \"receiver\": \"5dbffad98ebefa001775a452\",\n        \"caller\": \"5dbff75a17a0f60e402361b4\"\n    },\n    {\n        \"_id\": \"5dc0070dae8f9700175a12e7\",\n        \"receiver\": \"5dbffb1a8ebefa001775a453\",\n        \"caller\": \"5dbff75a17a0f60e402361b4\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/calls/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/calls/5dc0070dae8f9700175a12e7",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"calls",
+						"5dc0070dae8f9700175a12e7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/calls/:id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/calls/5dc0070dae8f9700175a12e7",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"calls",
+								"5dc0070dae8f9700175a12e7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "201"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"c9-ZpKegQmNa/rQWDzkdld8tVbbEJw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:13:39 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dc0070dae8f9700175a12e7\",\n    \"receiver\": \"5dbffb1a8ebefa001775a453\",\n    \"caller\": \"5dbff75a17a0f60e402361b4\",\n    \"date_created\": \"2019-11-04T11:10:05.696Z\",\n    \"date_modified\": \"2019-11-04T11:10:05.696Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/texts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"receiver\" : \"5dbffb1a8ebefa001775a453\",\n\t\"message\" : \"Hi Edited\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0084fae8f9700175a12e9",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"texts",
+						"5dc0084fae8f9700175a12e9"
+					]
+				},
+				"description": "<p>Create Message</p>\n\n<p>Inputs : receiver id, message</p>"
+			},
+			"response": []
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/texts/search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/texts/search",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"texts",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/texts/search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/texts/search",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"texts",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "252"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"fc-ovYPMgUevjn9CARM39LmKIlMY1k\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:16:44 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5dc005ffad505a1b90981b29\",\n        \"receiver\": \"5dbffad98ebefa001775a452\",\n        \"message\": \"Hello\",\n        \"sender\": \"5dbff75a17a0f60e402361b4\"\n    },\n    {\n        \"_id\": \"5dc0084fae8f9700175a12e9\",\n        \"receiver\": \"5dbffb1a8ebefa001775a453\",\n        \"message\": \"Hi\",\n        \"sender\": \"5dbff75a17a0f60e402361b4\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/texts/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0084fae8f9700175a12e9",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"texts",
+						"5dc0084fae8f9700175a12e9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/texts/:id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0084fae8f9700175a12e9",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"texts",
+								"5dc0084fae8f9700175a12e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "216"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"d8-cW5glFaenoH9pFfALgHXcFAwXHE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:18:25 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dc0084fae8f9700175a12e9\",\n    \"receiver\": \"5dbffb1a8ebefa001775a453\",\n    \"message\": \"Hi\",\n    \"sender\": \"5dbff75a17a0f60e402361b4\",\n    \"date_created\": \"2019-11-04T11:15:27.934Z\",\n    \"date_modified\": \"2019-11-04T11:15:27.934Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/texts/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"receiver\" : \"5dbffb1a8ebefa001775a453\",\n\t\"message\" : \"Hi Edited\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0084fae8f9700175a12e9",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"texts",
+						"5dc0084fae8f9700175a12e9"
+					]
+				},
+				"description": "Edit Text"
+			},
+			"response": []
+		},
+		{
+			"name": " https://peaceful-reef-42648.herokuapp.com/texts/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0070dae8f9700175a12e7",
+					"protocol": "https",
+					"host": [
+						"peaceful-reef-42648",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"texts",
+						"5dc0070dae8f9700175a12e7"
+					]
+				},
+				"description": "Edit Call\n"
+			},
+			"response": [
+				{
+					"name": " https://peaceful-reef-42648.herokuapp.com/texts/:id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwMDAwMSIsImlkIjoiNWRiZmY3NWExN2EwZjYwZTQwMjM2MWI0IiwiaWF0IjoxNTcyODY0NzIzLCJleHAiOjE1NzI5NTExMjN9.bNT6hxjGxlHAvQZrjeGeCend8sm8bIubEpAop4_Emm4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://peaceful-reef-42648.herokuapp.com/texts/5dc0084fae8f9700175a12e9",
+							"protocol": "https",
+							"host": [
+								"peaceful-reef-42648",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"texts",
+								"5dc0084fae8f9700175a12e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "216"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"d8-cW5glFaenoH9pFfALgHXcFAwXHE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2019 11:18:25 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"5dc0084fae8f9700175a12e9\",\n    \"receiver\": \"5dbffb1a8ebefa001775a453\",\n    \"message\": \"Hi\",\n    \"sender\": \"5dbff75a17a0f60e402361b4\",\n    \"date_created\": \"2019-11-04T11:15:27.934Z\",\n    \"date_modified\": \"2019-11-04T11:15:27.934Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

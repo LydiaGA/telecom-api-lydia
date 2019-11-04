@@ -1,0 +1,8 @@
+{
+    "name" : "Telecom Api",
+    "version" : "1.0.0",
+    "description" : "Telecom Api",
+    "template" : {
+        "forceLanguage" : "en"
+    } 
+}
