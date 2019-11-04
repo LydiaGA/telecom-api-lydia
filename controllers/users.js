@@ -7,8 +7,6 @@ const UserDal = require('../dal/user');
 exports.signup = function signup(req, res, next){
     var workflow = new events.EventEmitter();
 
-    workflow.emit('validate');
-
     workflow.on('validate', function(){
         var validationErrors = validationResult(req);
 
@@ -30,4 +28,6 @@ exports.signup = function signup(req, res, next){
             res.json(user);
         });
     });
+
+    workflow.emit('validate');
 }
