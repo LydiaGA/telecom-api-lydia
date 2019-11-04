@@ -10,4 +10,13 @@ router.post('/signup', [
   check('password').not().isEmpty().withMessage('Password is Required'),
 ], UsersController.signup);
 
+router.post('/login', [
+  check('phone_number').not().isEmpty().withMessage('Phone Number is Required'),
+  check('password').not().isEmpty().withMessage('Password is Required'),
+], UsersController.login);
+
+router.put('/:id', UsersController.updateUser);
+
+router.delete('/:id', UsersController.deleteUser);
+
 module.exports = router;
