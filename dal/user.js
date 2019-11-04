@@ -47,7 +47,7 @@ exports.deleteOne = function deleteOne(query, cb){
 }
 
 exports.search = function search(options, cb){
-    User.find(option.filter, options.fields)
+    User.find(options.filter, options.fields)
         .sort(options.sort)
         .limit(options.limit)
         .skip(options.limit * (options.page - 1))

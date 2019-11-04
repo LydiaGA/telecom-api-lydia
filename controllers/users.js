@@ -1,8 +1,12 @@
 const bcrypt = require('bcrypt');
 const events = require('events');
 const jwt = require('jsonwebtoken');
-const config = require('../config');
 const {check , validationResult} = require('express-validator');
+
+const searchOptions = require('../lib/search_options');
+const config = require('../config');
+
+const defaultFields = ['name', 'phone_number'];
 
 const UserDal = require('../dal/user');
 
@@ -156,7 +160,7 @@ exports.search = function search(req, res, next){
             page: req.query.page
         };
 
-        MoodDal.search(options, function (err, users) {
+        UserDal.search(options, function (err, users) {
             if (err) {
                 return next(err);
             }
@@ -165,4 +169,6 @@ exports.search = function search(req, res, next){
             res.json(users);
         });
     });
+
+    workflow.emit('validate');
 }
